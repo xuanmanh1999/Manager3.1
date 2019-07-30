@@ -8,8 +8,8 @@
     tools:context=".ThemNhanVien">
 
     <EditText
-        android:id="@+id/ETIDNV"
-        android:layout_width="wrap_content"
+        android:id="@+id/edId"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Nhập id nhân viên"
@@ -20,48 +20,48 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <EditText
-        android:id="@+id/EThotenNV"
+        android:id="@+id/edTen"
         style="@style/TextAppearance.AppCompat.Button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="5dp"
         android:ems="10"
         android:textSize="18sp"
         android:hint="Nhập họ tên nhân viên "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ETIDNV" />
+        app:layout_constraintTop_toBottomOf="@id/edId" />
 
     <EditText
-        android:id="@+id/ETChucVu"
-        android:layout_width="wrap_content"
+        android:id="@+id/edChucvu"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="5dp"
         android:ems="10"
         android:hint="Nhập chức vụ nhân viên"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/EThotenNV" />
+        app:layout_constraintTop_toBottomOf="@id/edTen" />
 
     <EditText
-        android:id="@+id/EDTphongban"
-        android:layout_width="wrap_content"
+        android:id="@+id/edPhongban"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="5dp"
         android:hint="Nhập phòng ban nhân viên"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ETChucVu" />
+        app:layout_constraintTop_toBottomOf="@id/edChucvu" />
 
     <EditText
-        android:id="@+id/ETMotaNV"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:id="@+id/edGioithieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Mô tả cơ bản về nhân viên"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/EDTphongban" />
+        app:layout_constraintTop_toBottomOf="@id/edPhongban" />
 
     <Button
         android:id="@+id/btnCancel"
@@ -69,7 +69,7 @@
         android:layout_height="wrap_content"
         android:background="#FFEB3B"
         android:onClick="btnCancel"
-        android:text="CanCel"
+        android:text="Cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.219"

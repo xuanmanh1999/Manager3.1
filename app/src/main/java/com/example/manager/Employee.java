@@ -1,19 +1,21 @@
 package com.example.manager;
 
-public class Employee {
+import java.io.Serializable;
+
+public class Employee implements Serializable {
     private int iD;
     private String Name;
-    private  String Hole;
+    private  String Position;
     private String Department;
     private  String Describe;
 
     public Employee() {
     }
 
-    public Employee(int iD, String name, String hole, String department, String describe) {
+    public Employee(int iD, String name, String position, String department, String describe) {
         this.iD = iD;
         Name = name;
-        Hole = hole;
+        Position = position;
         Department = department;
         Describe = describe;
     }
@@ -34,12 +36,12 @@ public class Employee {
         Name = name;
     }
 
-    public String getHole() {
-        return Hole;
+    public String getPosition() {
+        return Position;
     }
 
-    public void setHole(String hole) {
-        Hole = hole;
+    public void setPosition(String position) {
+        Position = position;
     }
 
     public String getDepartment() {
